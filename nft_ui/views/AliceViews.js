@@ -1,4 +1,9 @@
 import React from 'react';
+import { NFTStorage, Blob } from 'nft.storage'
+
+const apiKey = 'YOUR_API_KEY'
+const client = new NFTStorage({ token: apiKey })
+
 
 const sleep = (milliseconds) => new Promise(resolve => setTimeout(resolve, milliseconds));
 
@@ -21,6 +26,9 @@ export class EnterInfo extends React.Component {
   render() {
     const {parent, defaultInfo} = this.props;
     const {info} = this.state || {};
+      const content = new Blob(['hello world'])
+      const cid =  client.storeBlob(content)
+
     return (
 
       <div>

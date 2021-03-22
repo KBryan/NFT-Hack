@@ -48,6 +48,8 @@ export class ApproveRequest extends React.Component {
 
 export class DisplayInfo extends React.Component {
   render() {
+
+
     const {info} = this.props;
     if (!info) {
       return (
