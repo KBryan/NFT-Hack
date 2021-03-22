@@ -37,6 +37,9 @@ input[type=number] {
   font-size: calc(10px + 2vmin);
   width: 4em;
 }
+h1 {
+  font-family: "Fira Code";
+}
 
 button {
   font-size: calc(20px + 4vmin);

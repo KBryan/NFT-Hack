@@ -22,7 +22,16 @@ export class EnterInfo extends React.Component {
     const {parent, defaultInfo} = this.props;
     const {info} = this.state || {};
     return (
+
       <div>
+          <div>
+              <label htmlFor="last_name">Last name:</label><br/>
+              <input type="text" name="lastname" id="last_name"/>
+          </div>
+          <div>
+              <label htmlFor="message">Message:</label><br/>
+              <textarea id="last_name" rows="5" cols="10"></textarea>
+          </div>
         Alice, what is your secret info?
         <br />
         <textarea
