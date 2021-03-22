@@ -58,11 +58,14 @@ export class DisplayInfo extends React.Component {
     } else {
       return (
         <div>
+            <div>
+                <img src="https://dummyimage.com/200x100/000/fff&text=Logo" alt="" />
+            </div>
           <p>
             Alice's secret info is: <strong>{info}</strong>
           </p>
           <p>
-            Thank you, Bob. The contract has run to completion.
+            Thank you,  Bob. The contract has run to completion.
           </p>
         </div>
       );
